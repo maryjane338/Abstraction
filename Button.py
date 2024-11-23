@@ -10,6 +10,10 @@ class Button:
         self.text = text
         print('Задан текст для вывода')
 
+    def del_text_to_click(self):
+        self.checking = 0
+        print('Текст для вывода удалён')
+
     def click(self):
         if self.checking == 1:
             print(f'Кнопка нажата. Выведен текст:\n{self.text}')

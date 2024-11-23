@@ -75,7 +75,7 @@ class Tamagochi:
         if self.life is True:
             self.energy = 100
             self.hunger += 5
-            if self.hunger == 0:
+            if self.hunger == 100:
                 self.life = False
                 print(f'{self.name} умер от голода.')
             else:
